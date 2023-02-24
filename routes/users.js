@@ -18,7 +18,7 @@ router.post(//*primero el enpoin / y de segundo una funcion que se va a ejecutar
             req.body.is_author = false
             req.body.is_company = false
             req.body.is_verified = false
-            req.body.verify_code = false
+            req.body.verify_code = '63f9311a5a8c75421b3850d8'
             let user = await User.create(req.body)
             
             return res.status(201).json({//*enviarle un mensaje al cliente
